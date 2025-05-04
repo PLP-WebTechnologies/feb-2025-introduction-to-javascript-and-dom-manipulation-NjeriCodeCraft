@@ -1,0 +1,105 @@
+.moon-card {
+    transition: opacity 0.3s ease;
+}
+
+[aria-hidden="true"] {
+    display: none !important;
+}
+
+button[aria-pressed="true"] {
+    background-color: #ff8906;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0e17;
+    color: #fffffe;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #ff8906;
+    font-size: 2.5em;
+}
+
+.planet-card {
+    background-color: #1f1b3a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(113, 108, 255, 0.3);
+}
+
+.planet-visual {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff8906, #e53170);
+    margin: 20px auto;
+    box-shadow: 0 0 30px #e53170;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #6246ea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #7d63ff;
+    transform: translateY(-2px);
+}
+
+.moon-card {
+    background-color: #2a265f;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.moon-visual {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #eebbc3, #b8c1ec);
+    margin: 15px auto;
+    box-shadow: 0 0 20px #b8c1ec;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #a7a9be;
+}
+
+/* For cosmic mode */
+.cosmic-mode {
+    background-color: #01012b;
+}
+
+.cosmic-mode .planet-card {
+    background-color: #0e0b36;
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+}
+
+.cosmic-mode .planet-visual {
+    box-shadow: 0 0 50px #00f0ff;
+}

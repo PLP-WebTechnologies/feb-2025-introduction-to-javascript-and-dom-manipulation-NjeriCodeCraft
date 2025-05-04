@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore fascinating planets in our cosmic database">
+    <title>Cosmic Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌌 Cosmic Explorer</h1>
+    </header>
+    
+    <main>
+        <article class="planet-card" id="main-planet">
+            <h2 id="planet-title">Nebula Prime</h2>
+            <p id="planet-desc">A vibrant gas giant with swirling storms of ionized particles.</p>
+            <div class="planet-visual" id="planet-visual" aria-label="Visual representation of the current planet"></div>
+        </article>
+        
+        <div class="controls" role="toolbar" aria-label="Planet controls">
+            <button id="change-text-btn" aria-label="Discover new planet">Discover New Planet</button>
+            <button id="change-style-btn" aria-label="Toggle cosmic mode">Toggle Cosmic Mode</button>
+            <button id="toggle-element-btn" aria-label="Reveal or hide moon">Reveal/Hide Moon</button>
+        </div>
+        
+        <aside id="moon-container" style="display: none;" aria-hidden="true">
+            <section class="moon-card">
+                <h3>Luna Spectra</h3>
+                <p>This radiant moon reflects light in mesmerizing patterns.</p>
+                <div class="moon-visual" aria-label="Visual representation of the moon"></div>
+            </section>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>🚀 Explore the wonders of the cosmos!</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
